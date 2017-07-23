@@ -5,6 +5,7 @@ io.on('connection', function (socket) {
   socket.emit("YOUR_ID",socket.id);
   socket.on('StreamA',Str =>{
   console.log(Str);
+    socket.emit("TAKE_STREAM",Str);
 });
 
 
